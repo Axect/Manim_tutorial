@@ -9,7 +9,7 @@ class SquareToCircle(Scene):
         square.flip(RIGHT)
         square.rotate(-3 * TAU / 8)
         
-        self.play(ShowCreation(square))
-        self.play(Rotate(square, PI/4))
-        self.play(Transform(square, circle))
-        self.play(FadeOut(square))
+        self.play(ShowCreation(circle))
+        #self.play(Rotate(square, PI/4))
+        self.play(Transform(circle, square))
+        self.play(FadeOut(circle))
